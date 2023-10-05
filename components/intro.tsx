@@ -10,6 +10,32 @@ import { FaGithubSquare } from "react-icons/fa";
 import { useSectionInView } from "@/lib/hooks";
 import { useActiveSectionContext } from "@/context/active-section-context";
 import Typewriter from "typewriter-effect";
+import { Rock_Salt, VT323, Comic_Neue, Dosis } from "next/font/google";
+import { NextFont } from "next/dist/compiled/@next/font";
+
+const rock_salt = Rock_Salt({
+  weight: ["400"],
+  subsets: ["latin"],
+});
+
+const dosis = Dosis({
+  weight: ["400"],
+  subsets: ["latin"],
+});
+
+const vt323 = VT323({
+  weight: ["400"],
+  subsets: ["latin"],
+});
+
+const comic_neue = Comic_Neue({
+  weight: ["400"],
+  subsets: ["latin"],
+});
+
+function fontify(str: string, font: NextFont): string {
+  return `<span style="font-family:${font.style.fontFamily}">${str}</span>`;
+}
 
 export default function Intro() {
   const { ref } = useSectionInView("Home", 0.5);
@@ -19,59 +45,135 @@ export default function Intro() {
     <section
       ref={ref}
       id="home"
-      className="mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-[100rem]"
+      className="mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-[100rem] -mt-10"
     >
-      <h1 className="mb-10 mt-4 px-4 text-2xl font-bold !leading-[1.5] sm:text-7xl text-center font-sans italic">
+      <h1 className="mb-10 mt-4 px-4 text-3xl font-bold !leading-[1.5] sm:text-6xl text-center italic min-h-full">
         <Typewriter
+          options={{
+            loop: true,
+          }}
           onInit={(typewriter) => {
             typewriter
-              .typeString("Tyler Howard.")
-              .callFunction(() => {
-                console.log("String typed out!");
-              })
-              .pauseFor(2500)
-              .callFunction((props) => {
-                props.elements.cursor.innerHTML = " ";
-              })
+              .typeString(fontify("Tyler Howard.", rock_salt))
+              .pauseFor(1000)
+              .deleteAll()
+              .typeString(fontify("Software Engineer.", vt323))
+              .pauseFor(1000)
+              .deleteAll()
+              .typeString(fontify("Web Developer.", dosis))
+              .pauseFor(1000)
+              .deleteAll()
+              .changeDelay(40)
+              .typeString(fontify("Narcissist.", comic_neue))
+              .changeDelay(60)
+              .pauseFor(1000)
+              .typeString(fontify("..jk lol", comic_neue))
+              .pauseFor(100)
+              .deleteAll()
               .start();
           }}
         />
       </h1>
-      <div className="sm:grid sm:grid-cols-2 mt-4 mb-10">
-        <div className="flex items-center justify-center">
-          <div className="relative">
-            <motion.div
-              initial={{ opacity: 0, scale: 0 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{
-                type: "tween",
-                duration: 0.2,
-              }}
-            >
-              <Image
-                src="/headshot2.jpg"
-                alt="Tyler portrait"
-                width="300"
-                height="300"
-                quality="95"
-                priority={true}
-                className="object-cover border-[0.35rem] border-white shadow-xl rounded-xl"
-              />
-            </motion.div>
-          </div>
+      <div className="flex flex-col items-center justify-center">
+        <div className="relative">
+          <motion.div
+            initial={{ opacity: 0, scale: 0 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{
+              type: "tween",
+              duration: 0.2,
+            }}
+          >
+            <div className="carousel carousel-center p-4 space-x-4 bg-neutral rounded-box">
+              <div className="carousel-item">
+                <Image
+                  src="/headshot2.jpg"
+                  alt="Tyler portrait"
+                  width="300"
+                  height="300"
+                  quality="95"
+                  priority={true}
+                  className="object-cover border-[0.35rem] border-white shadow-xl rounded-xl"
+                />
+              </div>
+              <div className="carousel-item">
+                <Image
+                  src="/headshot2.jpg"
+                  alt="Tyler portrait"
+                  width="300"
+                  height="300"
+                  quality="95"
+                  priority={true}
+                  className="object-cover border-[0.35rem] border-white shadow-xl rounded-xl"
+                />
+              </div>
+              <div className="carousel-item">
+                <Image
+                  src="/headshot2.jpg"
+                  alt="Tyler portrait"
+                  width="300"
+                  height="300"
+                  quality="95"
+                  priority={true}
+                  className="object-cover border-[0.35rem] border-white shadow-xl rounded-xl"
+                />
+              </div>
+              <div className="carousel-item">
+                <Image
+                  src="/headshot2.jpg"
+                  alt="Tyler portrait"
+                  width="300"
+                  height="300"
+                  quality="95"
+                  priority={true}
+                  className="object-cover border-[0.35rem] border-white shadow-xl rounded-xl"
+                />
+              </div>
+              <div className="carousel-item">
+                <Image
+                  src="/headshot2.jpg"
+                  alt="Tyler portrait"
+                  width="300"
+                  height="300"
+                  quality="95"
+                  priority={true}
+                  className="object-cover border-[0.35rem] border-white shadow-xl rounded-xl"
+                />
+              </div>
+              <div className="carousel-item">
+                <Image
+                  src="/headshot2.jpg"
+                  alt="Tyler portrait"
+                  width="300"
+                  height="300"
+                  quality="95"
+                  priority={true}
+                  className="object-cover border-[0.35rem] border-white shadow-xl rounded-xl"
+                />
+              </div>
+              <div className="carousel-item">
+                <Image
+                  src="/headshot2.jpg"
+                  alt="Tyler portrait"
+                  width="300"
+                  height="300"
+                  quality="95"
+                  priority={true}
+                  className="object-cover border-[0.35rem] border-white shadow-xl rounded-xl"
+                />
+              </div>
+            </div>
+          </motion.div>
         </div>
 
         <motion.h1
-          className="mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5] sm:text-4xl sm:text-right"
+          className="mb-10 mt-4 px-4 text-2xl font-small !leading-[1.5] sm:text-3xl sm:text-center"
           initial={{ opacity: 0, y: 100 }}
           animate={{ opacity: 1, y: 0 }}
         >
-          {/* Hi, I'm <span className="font-bold">Tyler Howard!</span> */}
-          {/* <br />
-          <br /> */}
-          I'm a <span className="font-bold">software engineer</span> currently
-          looking for a position where I can grow as an engineer while providing
-          value to a team of great people.
+          I'm a <span className="font-extrabold">software engineer</span>{" "}
+          currently looking for a position where I can grow as an engineer while
+          providing value to a team of great people.
         </motion.h1>
       </div>
 

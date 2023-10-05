@@ -34,6 +34,7 @@
     "typewriter-effect": "^2.21.0"
   },
   "devDependencies": {
-    "@types/react-vertical-timeline-component": "^3.3.4"
+    "@types/react-vertical-timeline-component": "^3.3.4",
+    "daisyui": "^3.9.2"
   }
 }

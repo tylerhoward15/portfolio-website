@@ -67,24 +67,24 @@ export const experiencesData = [
 
 export const projectsData = [
   {
-    title: "Website",
+    title: "Car Suggest-O-Rator",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      tags: ["React", "Next.js", "Tailwind"],
+      "Web app that takes a user's prompt describing any and everything they want from their next car, and returns an AI generated suggestion and justification. Powered by the new ChatGPT Functions API and Google Cloud for image retrieval.",
+      tags: ["React", "Tailwind", "ChatGPT", "GCP"],
     imageUrl: websiteImg,
   },
   {
-    title: "App",
+    title: "On Premises Server Hosting",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      tags: ["React", "Next.js", "Tailwind"],
+      "Built and programmed a dedicated server for home that serves many professional and recreational uses. Utilizing NGINX reverse proxy and docke for personal and client websites.",
+      tags: ["Docker", "NGINX", "UnRaid", "WireGuard"],
     imageUrl: websiteImg,
   },
   {
-    title: "Website App",
+    title: "Portfolio Websites",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    tags: ["React", "Next.js", "Tailwind"],
+      "I've been building modern and responsive portfolio websites for artists and professionals, such as the one you're reading this on! The goal is to provide a refined experience with unique experiences built on my engineering background. You can see an example actress client site clicking here.",
+    tags: ["React", "Next.js", "Tailwind", "DaisyUI", "Vercel", "PostgreSQL"],
     imageUrl: websiteImg,
   },
 ] as const;
@@ -98,6 +98,8 @@ export const skillsData = [
   "React",
   "Next.js",
   "Node.js",
+  "NGINX",
+  "Docker",
   "Git",
   "Tailwind",
   "Prisma",

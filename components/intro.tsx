@@ -47,7 +47,7 @@ export default function Intro() {
       id="home"
       className="mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-[100rem] -mt-10"
     >
-      <h1 className="mb-10 mt-4 px-4 text-3xl font-bold !leading-[1.5] sm:text-6xl text-center italic min-h-full">
+      <h1 className="mb-10 mt-4 px-4 text-3xl font-bold !leading-[1.5] sm:text-6xl text-center italic min-h-[50px] sm:min-h-[100px]">
         <Typewriter
           options={{
             loop: true,

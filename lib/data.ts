@@ -41,7 +41,7 @@ export const experiencesData = [
   },
   {
     title: "Software Development Engineer - Intern",
-    location: "Orlando, FL",
+    location: "Seattle, WA",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     icon: React.createElement(CgWorkAlt),
@@ -49,7 +49,7 @@ export const experiencesData = [
   },
   {
     title: "Software Development Engineer - Intern",
-    location: "Houston, TX",
+    location: "New York, NY",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     icon: React.createElement(CgWorkAlt),
@@ -90,6 +90,7 @@ export const projectsData = [
 ] as const;
 
 export const skillsData = [
+  "Java",
   "HTML",
   "CSS",
   "JavaScript",

@@ -85,7 +85,7 @@ export default function Intro() {
           className="sm:grid sm:grid-cols-2 gap-10"
         >
           <div className="avatar">
-            <div className="rounded-3xl border-double border border-indigo-500 mb-10 drop-shadow-2xl">
+            <div className="rounded-3xl border-double border-2 dark:border-[#6f3675] mb-10 drop-shadow-2xl">
               <Image
                 src="/headshot2.jpg"
                 alt="Tyler portrait"

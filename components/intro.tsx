@@ -55,7 +55,7 @@ export default function Intro() {
           onInit={(typewriter) => {
             typewriter
               .typeString(fontify("Tyler Howard.", rock_salt))
-              .pauseFor(1000)
+              .pauseFor(2000)
               .deleteAll()
               .typeString(fontify("Software Engineer.", vt323))
               .pauseFor(1000)

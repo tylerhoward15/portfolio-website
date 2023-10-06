@@ -74,107 +74,40 @@ export default function Intro() {
           }}
         />
       </h1>
-      <div className="flex flex-col items-center justify-center">
-        <div className="relative">
-          <motion.div
-            initial={{ opacity: 0, scale: 0 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{
-              type: "tween",
-              duration: 0.2,
-            }}
-          >
-            <div className="carousel carousel-center p-4 space-x-4 bg-neutral rounded-box">
-              <div className="carousel-item">
-                <Image
-                  src="/headshot2.jpg"
-                  alt="Tyler portrait"
-                  width="300"
-                  height="300"
-                  quality="95"
-                  priority={true}
-                  className="object-cover border-[0.35rem] border-white shadow-xl rounded-xl"
-                />
-              </div>
-              <div className="carousel-item">
-                <Image
-                  src="/headshot2.jpg"
-                  alt="Tyler portrait"
-                  width="300"
-                  height="300"
-                  quality="95"
-                  priority={true}
-                  className="object-cover border-[0.35rem] border-white shadow-xl rounded-xl"
-                />
-              </div>
-              <div className="carousel-item">
-                <Image
-                  src="/headshot2.jpg"
-                  alt="Tyler portrait"
-                  width="300"
-                  height="300"
-                  quality="95"
-                  priority={true}
-                  className="object-cover border-[0.35rem] border-white shadow-xl rounded-xl"
-                />
-              </div>
-              <div className="carousel-item">
-                <Image
-                  src="/headshot2.jpg"
-                  alt="Tyler portrait"
-                  width="300"
-                  height="300"
-                  quality="95"
-                  priority={true}
-                  className="object-cover border-[0.35rem] border-white shadow-xl rounded-xl"
-                />
-              </div>
-              <div className="carousel-item">
-                <Image
-                  src="/headshot2.jpg"
-                  alt="Tyler portrait"
-                  width="300"
-                  height="300"
-                  quality="95"
-                  priority={true}
-                  className="object-cover border-[0.35rem] border-white shadow-xl rounded-xl"
-                />
-              </div>
-              <div className="carousel-item">
-                <Image
-                  src="/headshot2.jpg"
-                  alt="Tyler portrait"
-                  width="300"
-                  height="300"
-                  quality="95"
-                  priority={true}
-                  className="object-cover border-[0.35rem] border-white shadow-xl rounded-xl"
-                />
-              </div>
-              <div className="carousel-item">
-                <Image
-                  src="/headshot2.jpg"
-                  alt="Tyler portrait"
-                  width="300"
-                  height="300"
-                  quality="95"
-                  priority={true}
-                  className="object-cover border-[0.35rem] border-white shadow-xl rounded-xl"
-                />
-              </div>
-            </div>
-          </motion.div>
-        </div>
-
-        <motion.h1
-          className="mb-10 mt-4 px-4 text-2xl font-small !leading-[1.5] sm:text-3xl sm:text-center"
-          initial={{ opacity: 0, y: 100 }}
-          animate={{ opacity: 1, y: 0 }}
+      <div className="flex flex-col items-center justify-center drop-shadow-2xl">
+        <motion.div
+          initial={{ opacity: 0, scale: 0 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{
+            type: "tween",
+            duration: 0.2,
+          }}
+          className="sm:grid sm:grid-cols-2 gap-10"
         >
-          I'm a <span className="font-extrabold">software engineer</span>{" "}
-          currently looking for a position where I can grow as an engineer while
-          providing value to a team of great people.
-        </motion.h1>
+          <div className="avatar">
+            <div className="rounded-3xl border-double border border-indigo-500 mb-10 drop-shadow-2xl">
+              <Image
+                src="/headshot2.jpg"
+                alt="Tyler portrait"
+                width="300"
+                height="300"
+                quality="95"
+                priority={true}
+              />
+            </div>
+          </div>
+          <motion.h2
+            className="flex flex-col justify-center items-center text-xl !leading-[1.5] sm:text-3xl sm:text-center mb-10"
+            initial={{ opacity: 0, y: 100 }}
+            animate={{ opacity: 1, y: 0 }}
+          >
+            <div>
+              I'm a <span className="font-extrabold">software engineer</span>{" "}
+              currently looking for a position where I can grow as an engineer
+              while providing value to a team of great people.
+            </div>
+          </motion.h2>
+        </motion.div>
       </div>
 
       <motion.div

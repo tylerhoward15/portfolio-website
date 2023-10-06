@@ -32,37 +32,45 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Pursue B.S Computer Science",
+    title: "B.S Computer Science - 3.7 GPA",
     location: "Philadelphia, PA",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "Recipient of Recipient of President’s Scholarship (Full Tuition + Stipends). Member of Temple’s Honors College.",
     icon: React.createElement(LuGraduationCap),
-    date: "2016",
+    date: "Starting 2016",
   },
   {
     title: "Software Development Engineer - Intern",
     location: "Seattle, WA",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "Android development for Alexa Automotive. Designed/implemented an Android testing suite that simulates driving any route.",
     icon: React.createElement(CgWorkAlt),
-    date: "2018",
+    date: "Summer 2018",
   },
   {
     title: "Software Development Engineer - Intern",
     location: "New York, NY",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "Architecture scalability research/prototyping for high-scale, real-time databse caching solutions within Amazon Advertising. Created AWS fargate prototyping environment to stress test a throughput of 100,000 TPS.",
     icon: React.createElement(CgWorkAlt),
-    date: "2019",
+    date: "Summer 2019",
   },
   {
-    title: "Software Development Engineer",
+    title: "Software Development Engineer - Full Time",
     location: "Austin, TX",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "Full stack engineering solutions for Amazon Global Expansions. Led launch of Amazon services in new markets that convert around 1 million transactions per month of Amazon purchases to accounting entries in new countries (e.g. www.amazon.pl, www.amazon.eg, and more).",
     icon: React.createElement(CgWorkAlt),
     date: "2020-2022",
   },
+  {
+    title: "Freelance Web Dev and Digital Services",
+    location: "Los Angeles",
+    description:
+      "Providing miscellaneous digital services for local entertainment industry professionals. Deveoloping, hosting, and maintaining websites portfolios and providing professional photo/video services for headshots and audition taping.",
+    icon: React.createElement(CgWorkAlt),
+    date: "2022-Current",
+  }
 ] as const;
 
 export const projectsData = [

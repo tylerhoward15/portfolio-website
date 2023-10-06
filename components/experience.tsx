@@ -10,6 +10,7 @@ import "react-vertical-timeline-component/style.min.css";
 import { experiencesData } from "@/lib/data";
 import { useSectionInView } from "@/lib/hooks";
 import { useTheme } from "@/context/theme-context";
+import Tags from "./tags";
 
 export default function Experience() {
   const { ref } = useSectionInView("Experience", 0.3);
@@ -62,6 +63,7 @@ export default function Experience() {
               <p className="!mt-1 !font-normal text-gray-700 dark:text-white/75">
                 {item.description}
               </p>
+              <Tags tags={item.tags} />
             </VerticalTimelineElement>
           </React.Fragment>
         ))}

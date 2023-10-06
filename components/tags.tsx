@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function Tags({ tags }: { tags: readonly string[]}) {
+export default function Tags({ tags }: { tags: readonly string[] }) {
   return (
     <ul className="flex flex-wrap mt-4 gap-2 sm:mt-6">
       {tags?.map((tag, index) => (

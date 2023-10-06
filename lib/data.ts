@@ -83,6 +83,7 @@ export const projectsData = [
       "Web app that takes a user's prompt describing any and everything they want from their next car, and returns an AI generated suggestion and justification. Powered by the new ChatGPT Functions API and Google Cloud for image retrieval.",
       tags: ["React", "Tailwind", "ChatGPT", "GCP"],
     imageUrl: carSuggImg,
+    link: "https://car-suggestorator.vercel.app/"
   },
   {
     title: "On Premises Server Hosting",
@@ -90,6 +91,7 @@ export const projectsData = [
       "Built and programmed a dedicated server for home that serves many professional and recreational uses. Utilizing NGINX reverse proxy and docke for personal and client websites.",
       tags: ["Docker", "NGINX", "UnRaid", "WireGuard"],
     imageUrl: nginxLogoImg,
+    link: "https://www.nginx.com/"
   },
   {
     title: "Portfolio Websites",
@@ -97,6 +99,7 @@ export const projectsData = [
       "I've been building modern and responsive portfolio websites for artists and professionals, such as the one you're reading this on! The goal is to provide a refined experience with unique experiences built on my engineering background. You can see an example actress client site clicking here.",
     tags: ["React", "Next.js", "Tailwind", "DaisyUI", "Vercel", "PostgreSQL"],
     imageUrl: portfolioImg,
+    link: "https://tyler-howard.vercel.app/"
   },
 ] as const;
 

@@ -1,7 +1,9 @@
 import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { LuGraduationCap } from "react-icons/lu";
-import websiteImg from "@/public/images.png";
+import nginxLogoImg from "@/public/Nginx-Logo.png";
+import carSuggImg from "@/public/car-suggestorator.png";
+import portfolioImg from "@/public/portfolio.png";
 
 export const links = [
   {
@@ -80,21 +82,21 @@ export const projectsData = [
     description:
       "Web app that takes a user's prompt describing any and everything they want from their next car, and returns an AI generated suggestion and justification. Powered by the new ChatGPT Functions API and Google Cloud for image retrieval.",
       tags: ["React", "Tailwind", "ChatGPT", "GCP"],
-    imageUrl: websiteImg,
+    imageUrl: carSuggImg,
   },
   {
     title: "On Premises Server Hosting",
     description:
       "Built and programmed a dedicated server for home that serves many professional and recreational uses. Utilizing NGINX reverse proxy and docke for personal and client websites.",
       tags: ["Docker", "NGINX", "UnRaid", "WireGuard"],
-    imageUrl: websiteImg,
+    imageUrl: nginxLogoImg,
   },
   {
     title: "Portfolio Websites",
     description:
       "I've been building modern and responsive portfolio websites for artists and professionals, such as the one you're reading this on! The goal is to provide a refined experience with unique experiences built on my engineering background. You can see an example actress client site clicking here.",
     tags: ["React", "Next.js", "Tailwind", "DaisyUI", "Vercel", "PostgreSQL"],
-    imageUrl: websiteImg,
+    imageUrl: portfolioImg,
   },
 ] as const;
 

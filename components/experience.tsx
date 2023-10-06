@@ -32,19 +32,13 @@ export default function Experience() {
         while still in school, I joined Amazon full-time in 2020 in Austin, TX.
       </p>
       <p className="mb-3">
-        In late 2021, a very close loved one who lived in Los Angeles was
-        diagnosed with late-stage cancer. As return-to-office mandates began,
-        and the burden of time approached, I decided to take a break in my
-        career and move to Los Angeles to help take care of and spend time with
-        my family.
-      </p>
-      <p className="mb-3">
-        While in Los Angeles, I have provided part-time services to actors
-        needing help with audition taping and their online portfolio. I have
-        been able to deliver professional assistance to a network of local
-        friends and acquaintances in the entertainment industry. My knowledge in
-        tech allowed me to work part-time designing websites, taking headshots,
-        and editing while still embracing extremely valuable time with family.
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+        occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+        mollit anim id est laborum."
       </p>
       <VerticalTimeline lineColor="">
         {experiencesData.map((item, index) => (

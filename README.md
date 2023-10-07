@@ -1,4 +1,4 @@
-<a href="https://tyler-howard.vercel.app">
+<a href="https://tylerhoward.dev">
   <h1 align="center">Tyler Howard - Portfolio</h1>
 </a>
 

@@ -64,7 +64,7 @@ export default function Intro() {
               .pauseFor(1000)
               .deleteAll()
               .changeDelay(40)
-              .typeString(fontify("Conceited.", comic_neue))
+              .typeString(fontify("Narcissist.", comic_neue))
               .changeDelay(60)
               .pauseFor(1000)
               .typeString(fontify("..jk lol", comic_neue))

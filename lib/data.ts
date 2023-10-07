@@ -56,7 +56,7 @@ export const experiencesData = [
     title: "Software Development Engineer - Intern",
     location: "New York, NY",
     description:
-      "Architecture scalability research/prototyping for high-scale, real-time databse caching solutions within Amazon Advertising. Created AWS fargate prototyping environment to stress test a throughput of 100,000 TPS.",
+      "Architecture scalability research/prototyping for high-scale, real-time database caching solutions within Amazon Advertising. Created AWS fargate prototyping environment to stress test a throughput of 100,000 TPS.",
     tags: ["ApacheDB", "Redis", "ECS Fargate", "CloudFormation"],
     icon: React.createElement(CgWorkAlt),
     date: "Summer 2019",
@@ -65,7 +65,7 @@ export const experiencesData = [
     title: "Software Development Engineer - Full Time",
     location: "Austin, TX",
     description:
-      "Full stack engineering solutions for Amazon Global Expansions. Led launch of Amazon services in new markets that convert around 1 million transactions per month of Amazon purchases to accounting entries in new countries (e.g. www.amazon.pl, www.amazon.eg, and more).",
+      "Full stack engineering solutions for Amazon Global Expansions. Led the launch of Amazon services in new markets that convert around 1 million transactions per month of Amazon purchases to accounting entries in new countries (e.g. www.amazon.pl, www.amazon.eg, and more).",
     tags: ["Javascript", "React.js", "Node.js", "Angular", "Java", "ElasticSearch", ],
     icon: React.createElement(CgWorkAlt),
     date: "2020-2022",
@@ -74,7 +74,7 @@ export const experiencesData = [
     title: "Freelance Web Dev and Digital Services",
     location: "Los Angeles",
     description:
-      "Providing miscellaneous digital services for local entertainment industry professionals. Deveoloping, hosting, and maintaining websites portfolios and providing professional photo/video services for headshots and audition taping.",
+      "Providing miscellaneous digital services for local entertainment industry professionals. Developing, hosting, and maintaining website portfolios and providing professional photo/video services for headshots and audition taping.",
     tags: ["React", "Next.js", "Tailwind", "Vercel", "PostgreSQL", "Vite"],
     icon: React.createElement(CgWorkAlt),
     date: "2022-Current",
@@ -85,13 +85,13 @@ export const projectsData = [
   {
     title: "Car Suggest-O-Rator",
     description:
-      "Web app that takes a user's prompt describing any and everything they want from their next car, and returns an AI generated suggestion and justification. Powered by the new ChatGPT Functions API and Google Cloud for image retrieval.",
+      "Web app that takes a user's prompt describing any and everything they want from their next car, and returns an AI-generated suggestion and justification. Powered by the new ChatGPT Functions API and Google Cloud for image retrieval.",
     tags: ["React", "Tailwind", "ChatGPT", "GCP"],
     imageUrl: carSuggImg,
     link: "https://car-suggestorator.vercel.app/"
   },
   {
-    title: "On Premises Server Hosting",
+    title: "On-Premises Server Hosting",
     description:
       "Built and programmed a dedicated server for home that serves many professional and recreational uses. Utilizing NGINX reverse proxy and docker for personal and client websites.",
     tags: ["Docker", "NGINX", "UnRaid", "WireGuard"],

@@ -10,6 +10,7 @@ import "react-vertical-timeline-component/style.min.css";
 import { experiencesData } from "@/lib/data";
 import { useSectionInView } from "@/lib/hooks";
 import { useTheme } from "@/context/theme-context";
+import Tags from "./tags";
 
 export default function Experience() {
   const { ref } = useSectionInView("Experience", 0.3);
@@ -30,15 +31,6 @@ export default function Experience() {
         the position to be a software engineer intern at Amazon's headquarters
         in Seattle. After another internship the next summer in New York City
         while still in school, I joined Amazon full-time in 2020 in Austin, TX.
-      </p>
-      <p className="mb-3">
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-        occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-        mollit anim id est laborum."
       </p>
       <VerticalTimeline lineColor="">
         {experiencesData.map((item, index) => (
@@ -71,10 +63,19 @@ export default function Experience() {
               <p className="!mt-1 !font-normal text-gray-700 dark:text-white/75">
                 {item.description}
               </p>
+              <Tags tags={item.tags} />
             </VerticalTimelineElement>
           </React.Fragment>
         ))}
       </VerticalTimeline>
+      <p className="mb-3">
+        While in Los Angeles, I have provided part-time services to actors
+        needing help with audition taping and their online portfolio. I have
+        been able to deliver professional assistance to a network of local
+        friends and acquaintances in the entertainment industry. My knowledge in
+        tech allowed me to work part-time designing websites, taking headshots,
+        and editing.
+      </p>
     </section>
   );
 }

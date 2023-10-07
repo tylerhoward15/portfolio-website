@@ -55,7 +55,7 @@ export default function Intro() {
           onInit={(typewriter) => {
             typewriter
               .typeString(fontify("Tyler Howard.", rock_salt))
-              .pauseFor(1000)
+              .pauseFor(2000)
               .deleteAll()
               .typeString(fontify("Software Engineer.", vt323))
               .pauseFor(1000)
@@ -132,7 +132,7 @@ export default function Intro() {
 
         <a
           className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none hover:scale-110 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10"
-          href="/CV.pdf"
+          href="/Tyler-Howard-CV.pdf"
           download
         >
           Download Resume{" "}

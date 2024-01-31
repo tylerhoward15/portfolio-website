@@ -1,45 +1,45 @@
-"use client";
+'use client'
 
-import Image from "next/image";
-import React from "react";
-import { motion } from "framer-motion";
-import Link from "next/link";
-import { BsArrowRight, BsLinkedin } from "react-icons/bs";
-import { HiDownload } from "react-icons/hi";
-import { FaGithubSquare } from "react-icons/fa";
-import { useSectionInView } from "@/lib/hooks";
-import { useActiveSectionContext } from "@/context/active-section-context";
-import Typewriter from "typewriter-effect";
-import { Rock_Salt, VT323, Comic_Neue, Dosis } from "next/font/google";
-import { NextFont } from "next/dist/compiled/@next/font";
+import Image from 'next/image'
+import React from 'react'
+import { motion } from 'framer-motion'
+import Link from 'next/link'
+import { BsArrowRight, BsLinkedin } from 'react-icons/bs'
+import { HiDownload } from 'react-icons/hi'
+import { FaGithubSquare } from 'react-icons/fa'
+import { useSectionInView } from '@/lib/hooks'
+import { useActiveSectionContext } from '@/context/active-section-context'
+import Typewriter from 'typewriter-effect'
+import { Rock_Salt, VT323, Comic_Neue, Dosis } from 'next/font/google'
+import { NextFont } from 'next/dist/compiled/@next/font'
 
 const rock_salt = Rock_Salt({
-  weight: ["400"],
-  subsets: ["latin"],
-});
+  weight: ['400'],
+  subsets: ['latin'],
+})
 
 const dosis = Dosis({
-  weight: ["400"],
-  subsets: ["latin"],
-});
+  weight: ['400'],
+  subsets: ['latin'],
+})
 
 const vt323 = VT323({
-  weight: ["400"],
-  subsets: ["latin"],
-});
+  weight: ['400'],
+  subsets: ['latin'],
+})
 
 const comic_neue = Comic_Neue({
-  weight: ["400"],
-  subsets: ["latin"],
-});
+  weight: ['400'],
+  subsets: ['latin'],
+})
 
 function fontify(str: string, font: NextFont): string {
-  return `<span style="font-family:${font.style.fontFamily}">${str}</span>`;
+  return `<span style="font-family:${font.style.fontFamily}">${str}</span>`
 }
 
 export default function Intro() {
-  const { ref } = useSectionInView("Home", 0.5);
-  const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
+  const { ref } = useSectionInView('Home', 0.5)
+  const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext()
 
   return (
     <section
@@ -54,23 +54,23 @@ export default function Intro() {
           }}
           onInit={(typewriter) => {
             typewriter
-              .typeString(fontify("Tyler Howard.", rock_salt))
+              .typeString(fontify('Tyler Howard.', rock_salt))
               .pauseFor(2000)
               .deleteAll()
-              .typeString(fontify("Software Engineer.", vt323))
+              .typeString(fontify('Software Engineer.', vt323))
               .pauseFor(1000)
               .deleteAll()
-              .typeString(fontify("Web Developer.", dosis))
+              .typeString(fontify('Web Developer.', dosis))
               .pauseFor(1000)
               .deleteAll()
               .changeDelay(40)
-              .typeString(fontify("Narcissist.", comic_neue))
+              .typeString(fontify('Narcissist.', comic_neue))
               .changeDelay(60)
               .pauseFor(1000)
-              .typeString(fontify("..jk lol", comic_neue))
+              .typeString(fontify('..jk lol', comic_neue))
               .pauseFor(100)
               .deleteAll()
-              .start();
+              .start()
           }}
         />
       </h1>
@@ -79,7 +79,7 @@ export default function Intro() {
           initial={{ opacity: 0, scale: 0 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{
-            type: "tween",
+            type: 'tween',
             duration: 0.2,
           }}
           className="sm:grid sm:grid-cols-2 gap-10"
@@ -102,7 +102,7 @@ export default function Intro() {
             animate={{ opacity: 1, y: 0 }}
           >
             <div>
-              I'm a <span className="font-extrabold">software engineer</span>{" "}
+              I'm a <span className="font-extrabold">software engineer</span>{' '}
               currently looking for a position where I can grow as an engineer
               while providing value to a team of great people.
             </div>
@@ -122,11 +122,11 @@ export default function Intro() {
           href="#contact"
           className="group bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none hover:scale-110 hover:bg-gray-950 active:scale-105 transition"
           onClick={() => {
-            setActiveSection("Contact");
-            setTimeOfLastClick(Date.now());
+            setActiveSection('Contact')
+            setTimeOfLastClick(Date.now())
           }}
         >
-          Contact me here{" "}
+          Contact me here{' '}
           <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition" />
         </Link>
 
@@ -135,7 +135,7 @@ export default function Intro() {
           href="/Tyler_Howard_resume.pdf"
           download
         >
-          Download Resume{" "}
+          Download Resume{' '}
           <HiDownload className="opacity-60 group-hover:translate-y-1 transition" />
         </a>
 
@@ -158,5 +158,5 @@ export default function Intro() {
         </div>
       </motion.div>
     </section>
-  );
+  )
 }

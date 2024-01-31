@@ -1,20 +1,20 @@
-"use client";
+'use client'
 
-import React from "react";
-import SectionHeading from "./section-heading";
+import React from 'react'
+import SectionHeading from './section-heading'
 import {
   VerticalTimeline,
   VerticalTimelineElement,
-} from "react-vertical-timeline-component";
-import "react-vertical-timeline-component/style.min.css";
-import { experiencesData } from "@/lib/data";
-import { useSectionInView } from "@/lib/hooks";
-import { useTheme } from "@/context/theme-context";
-import Tags from "./tags";
+} from 'react-vertical-timeline-component'
+import 'react-vertical-timeline-component/style.min.css'
+import { experiencesData } from '@/lib/data'
+import { useSectionInView } from '@/lib/hooks'
+import { useTheme } from '@/context/theme-context'
+import Tags from './tags'
 
 export default function Experience() {
-  const { ref } = useSectionInView("Experience", 0.3);
-  const { theme } = useTheme();
+  const { ref } = useSectionInView('Experience', 0.3)
+  const { theme } = useTheme()
 
   return (
     <section
@@ -38,24 +38,24 @@ export default function Experience() {
             <VerticalTimelineElement
               contentStyle={{
                 background:
-                  theme === "light" ? "#f3f4f6" : "rgba(255, 255, 255, 0.05)",
-                boxShadow: "none",
-                border: "1px solid rgba(0, 0, 0, 0.05)",
-                textAlign: "left",
-                padding: "1.3rem 2rem",
+                  theme === 'light' ? '#f3f4f6' : 'rgba(255, 255, 255, 0.05)',
+                boxShadow: 'none',
+                border: '1px solid rgba(0, 0, 0, 0.05)',
+                textAlign: 'left',
+                padding: '1.3rem 2rem',
               }}
               contentArrowStyle={{
                 borderRight:
-                  theme === "light"
-                    ? "0.4rem solid #9ca3af"
-                    : "0.4rem solid rgba(255, 255, 255, 0.5)",
+                  theme === 'light'
+                    ? '0.4rem solid #9ca3af'
+                    : '0.4rem solid rgba(255, 255, 255, 0.5)',
               }}
               date={item.date}
               icon={item.icon}
               iconStyle={{
                 background:
-                  theme === "light" ? "white" : "rgba(255, 255, 255, 0.15)",
-                fontSize: "1.5rem",
+                  theme === 'light' ? 'white' : 'rgba(255, 255, 255, 0.15)',
+                fontSize: '1.5rem',
               }}
             >
               <h3 className="font-semibold capitalize">{item.title}</h3>
@@ -68,12 +68,14 @@ export default function Experience() {
           </React.Fragment>
         ))}
       </VerticalTimeline>
-      <p className="mb-3 mt-10">
+
+      <h3 className="font-semibold mt-10">Additional Context</h3>
+      <p className="mb-3 mt-3">
         In late 2021, a very close loved one who lived in Los Angeles was
         diagnosed with late-stage cancer. As return-to-office mandates began,
-        and the burden of time approached, I decided to take a break in my
-        career and move to Los Angeles to help take care of and spend time with
-        my family.
+        and the burden of time approached, I decided to reduce my
+        responsibilities in my career and move to Los Angeles to help take care
+        of and spend time with my family.
       </p>
       <p className="mb-3">
         While in Los Angeles, I have provided part-time services to actors
@@ -83,6 +85,15 @@ export default function Experience() {
         tech allowed me to work part-time designing websites, taking headshots,
         and editing while still embracing extremely valuable time with family.
       </p>
+      <p className="mb-3">
+        I am now navigating the process of reentering the tech world and I am
+        extremely excited to pursue my ambitions again. The same drive that
+        helped me succeed in my time at college and landing my first dream job
+        is still with me and as strong as ever. I am so eager to see what
+        oppurtunities and challenges I am presented with so that I can continue
+        to grow and figure out the next steps in my career to achieve all the
+        things I have set out to do.
+      </p>
     </section>
-  );
+  )
 }

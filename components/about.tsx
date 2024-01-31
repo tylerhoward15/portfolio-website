@@ -1,12 +1,12 @@
-"use client";
+'use client'
 
-import React from "react";
-import SectionHeading from "./section-heading";
-import { motion } from "framer-motion";
-import { useSectionInView } from "@/lib/hooks";
+import React from 'react'
+import SectionHeading from './section-heading'
+import { motion } from 'framer-motion'
+import { useSectionInView } from '@/lib/hooks'
 
 export default function About() {
-  const { ref } = useSectionInView("About", 0.4);
+  const { ref } = useSectionInView('About', 0.4)
 
   return (
     <motion.section
@@ -24,8 +24,8 @@ export default function About() {
         loved technology my whole life, but outside of that, sports have also
         always been a pillar of my hobbies and interests. In high school, I
         played baseball, basketball, and golf; I still jump at the chance to
-        play today! Once upon a time, I was a single-digit handicap golfer, so
-        I’m always looking for a "business meeting" if you know what I mean!
+        play today! Especially golf, I am always ready to be the 4th for any
+        round available!
       </p>
       <br />
       <p className="mb-3">
@@ -34,7 +34,7 @@ export default function About() {
         going to track days, or participating in racing sim competitions, I
         adore motorsports. I am one of the select few masochists who drives a
         manual car in Los Angeles, and I fully deserve any judgment I get for
-        that. &#128517;
+        that.
       </p>
       <br />
       <p className="mb-3">
@@ -44,9 +44,9 @@ export default function About() {
         career can be directly traced to the excitement of moments such as
         seeing the first iPhone be released. This intrinsic fascination with all
         things "tech" continues to push me to be a better engineer every day.
-        So, if you are looking for an engineer <strong>AND</strong> a 4th for
-        your golf outings...I would be an unreasonably great fit.
+        So, if you are looking for an engineer <strong>AND</strong> someone who
+        can carry the team social events...I would be an unreasonably great fit.
       </p>
     </motion.section>
-  );
+  )
 }

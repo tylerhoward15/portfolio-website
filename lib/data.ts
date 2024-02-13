@@ -111,7 +111,7 @@ export const projectsData = [
       "I've been building modern and responsive portfolio websites for artists and professionals, such as the one you're reading this on! The goal is to provide a refined experience with unique experiences built on my engineering background. You can see an example actress client site clicking here.",
     tags: ['React', 'Next.js', 'Tailwind', 'DaisyUI', 'Vercel', 'PostgreSQL'],
     imageUrl: portfolioImg,
-    link: 'https://tylerhoward.dev',
+    link: 'https://d36owove1j1m05.cloudfront.net/',
   },
 ] as const
 

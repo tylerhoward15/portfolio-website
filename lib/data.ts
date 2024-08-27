@@ -79,12 +79,21 @@ export const experiencesData = [
   },
   {
     title: 'Freelance Web Dev and Digital Services',
-    location: 'Los Angeles',
+    location: 'Los Angeles, CA',
     description:
       'Providing miscellaneous digital services for local entertainment industry professionals. Developing, hosting, and maintaining website portfolios and providing professional photo/video services for headshots and audition taping.',
     tags: ['React', 'Next.js', 'Tailwind', 'Vercel', 'PostgreSQL', 'Vite'],
     icon: React.createElement(CgWorkAlt),
     date: '2022-Current',
+  },
+  {
+    title: 'Software Developer',
+    location: 'Charlotte, NC',
+    description:
+      'Java and Javascript development for large insurance company software solutions. Mix of work between client facing and internal research and development with a focus on improving the process and deliverables of an organization of ~50 developers.',
+    tags: ['Java', 'Javascript', 'MySQL', 'Bash', 'Docker', 'AWS', 'ECS', 'Gradle'],
+    icon: React.createElement(CgWorkAlt),
+    date: '2024-Current',
   },
 ] as const
 

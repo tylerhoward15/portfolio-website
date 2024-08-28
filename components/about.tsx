@@ -24,17 +24,13 @@ export default function About() {
         loved technology my whole life, but outside of that, sports have also
         always been a pillar of my hobbies and interests. In high school, I
         played baseball, basketball, and golf; I still jump at the chance to
-        play today! Especially golf, I am always ready to be the 4th for any
-        round available!
+        play today!
       </p>
       <br />
       <p className="mb-3">
         Beyond sports and the outdoors, I am also a huge motorsports fan. I have
         been deeply obsessed with cars my whole life. From working on cars,
-        going to track days, or participating in racing sim competitions, I
-        adore motorsports. I am one of the select few masochists who drives a
-        manual car in Los Angeles, and I fully deserve any judgment I get for
-        that.
+        going to track days, or participating in racing sim competitions, count me in.
       </p>
       <br />
       <p className="mb-3">
@@ -45,7 +41,7 @@ export default function About() {
         seeing the first iPhone be released. This intrinsic fascination with all
         things "tech" continues to push me to be a better engineer every day.
         So, if you are looking for an engineer <strong>AND</strong> someone who
-        can carry the team social events...I would be an unreasonably great fit.
+        can talk enough for everyone at the team social events...I would be a *great* fit.
       </p>
     </motion.section>
   )

@@ -36,6 +36,7 @@ export const links = [
 export const experiencesData = [
   {
     title: 'B.S Computer Science - 3.7 GPA',
+    company: 'Temple University',
     location: 'Philadelphia, PA',
     description:
       'Recipient of Recipient of President’s Scholarship (Full Tuition + Stipends). Member of Temple’s Honors College.',
@@ -45,6 +46,7 @@ export const experiencesData = [
   },
   {
     title: 'Software Development Engineer - Intern',
+    company: 'Amazon Inc.',
     location: 'Seattle, WA',
     description:
       'Android development for Alexa Automotive. Designed/implemented an Android testing suite that simulates driving any route.',
@@ -54,6 +56,7 @@ export const experiencesData = [
   },
   {
     title: 'Software Development Engineer - Intern',
+    company: 'Amazon Inc.',
     location: 'New York, NY',
     description:
       'Architecture scalability research/prototyping for high-scale, real-time database caching solutions within Amazon Advertising. Created AWS fargate prototyping environment to stress test a throughput of 100,000 TPS.',
@@ -63,6 +66,7 @@ export const experiencesData = [
   },
   {
     title: 'Software Development Engineer - Full Time',
+    company: 'Amazon Inc.',
     location: 'Austin, TX',
     description:
       'Full stack engineering solutions for Amazon Global Expansions. Led the launch of Amazon services in new markets that convert around 1 million transactions per month of Amazon purchases to accounting entries in new countries (e.g. www.amazon.pl, www.amazon.eg, and more).',
@@ -79,6 +83,7 @@ export const experiencesData = [
   },
   {
     title: 'Freelance Web Dev and Digital Services',
+    company: 'Freelance',
     location: 'Los Angeles, CA',
     description:
       'Providing miscellaneous digital services for local entertainment industry professionals. Developing, hosting, and maintaining website portfolios and providing professional photo/video services for headshots and audition taping.',
@@ -88,6 +93,7 @@ export const experiencesData = [
   },
   {
     title: 'Software Developer',
+    company: 'iPipeline',
     location: 'Charlotte, NC',
     description:
       'Java and Javascript development for large insurance company software solutions. Mix of work between client facing and internal research and development with a focus on improving the process and deliverables of an organization of ~50 developers.',

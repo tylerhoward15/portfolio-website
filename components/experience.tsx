@@ -68,32 +68,6 @@ export default function Experience() {
           </React.Fragment>
         ))}
       </VerticalTimeline>
-
-      <h3 className="font-semibold mt-10">Additional Context</h3>
-      <p className="mb-3 mt-3">
-        In late 2021, a very close loved one who lived in Los Angeles was
-        diagnosed with late-stage cancer. As return-to-office mandates began,
-        and the burden of time approached, I decided to reduce my
-        responsibilities in my career and move to Los Angeles to help take care
-        of and spend time with my family.
-      </p>
-      <p className="mb-3">
-        While in Los Angeles, I have provided part-time services to actors
-        needing help with audition taping and their online portfolio. I have
-        been able to deliver professional assistance to a network of local
-        friends and acquaintances in the entertainment industry. My knowledge in
-        tech allowed me to work part-time designing websites, taking headshots,
-        and editing while still embracing extremely valuable time with family.
-      </p>
-      <p className="mb-3">
-        I am now navigating the process of reentering the tech world and I am
-        extremely excited to pursue my ambitions again. The same drive that
-        helped me succeed in my time at college and landing my first dream job
-        is still with me and as strong as ever. I am so eager to see what
-        oppurtunities and challenges I am presented with so that I can continue
-        to grow and figure out the next steps in my career to achieve all the
-        things I have set out to do.
-      </p>
     </section>
   )
 }

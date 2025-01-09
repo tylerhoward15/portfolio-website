@@ -34,16 +34,7 @@ export const links = [
 ] as const
 
 export const experiencesData = [
-  {
-    title: 'B.S Computer Science - 3.7 GPA',
-    company: 'Temple University',
-    location: 'Philadelphia, PA',
-    description:
-      'Recipient of Recipient of President’s Scholarship (Full Tuition + Stipends). Member of Temple’s Honors College.',
-    tags: ['AI', 'Mobile Development', 'Operating Systems', 'React Native'],
-    icon: React.createElement(LuGraduationCap),
-    date: '',
-  },
+
   {
     title: 'Software Development Engineer - Intern',
     company: 'Amazon Inc.',
@@ -82,14 +73,14 @@ export const experiencesData = [
     date: '2020-2022',
   },
   {
-    title: 'Freelance Web Dev and Digital Services',
-    company: 'Freelance',
-    location: 'Los Angeles, CA',
+    title: 'B.S Computer Science - 3.7 GPA',
+    company: 'Temple University',
+    location: 'Philadelphia, PA',
     description:
-      'Providing miscellaneous digital services for local entertainment industry professionals. Developing, hosting, and maintaining website portfolios and providing professional photo/video services for headshots and audition taping.',
-    tags: ['React', 'Next.js', 'Tailwind', 'Vercel', 'PostgreSQL', 'Vite'],
-    icon: React.createElement(CgWorkAlt),
-    date: '2022-Current',
+      'Recipient of Recipient of President’s Scholarship (Full Tuition + Stipends). Member of Temple’s Honors College.',
+    tags: ['AI', 'Mobile Development', 'Operating Systems', 'React Native'],
+    icon: React.createElement(LuGraduationCap),
+    date: '2024',
   },
   {
     title: 'Software Developer',

@@ -36,6 +36,16 @@ export const links = [
 export const experiencesData = [
 
   {
+    title: 'B.S Computer Science - 3.7 GPA',
+    company: 'Temple University',
+    location: 'Philadelphia, PA',
+    description:
+      'Recipient of Recipient of President’s Scholarship (Full Tuition + Stipends). Member of Temple’s Honors College.',
+    tags: ['AI', 'Mobile Development', 'Operating Systems', 'React Native'],
+    icon: React.createElement(LuGraduationCap),
+    date: '',
+  },
+  {
     title: 'Software Development Engineer - Intern',
     company: 'Amazon Inc.',
     location: 'Seattle, WA',
@@ -71,16 +81,6 @@ export const experiencesData = [
     ],
     icon: React.createElement(CgWorkAlt),
     date: '2020-2022',
-  },
-  {
-    title: 'B.S Computer Science - 3.7 GPA',
-    company: 'Temple University',
-    location: 'Philadelphia, PA',
-    description:
-      'Recipient of Recipient of President’s Scholarship (Full Tuition + Stipends). Member of Temple’s Honors College.',
-    tags: ['AI', 'Mobile Development', 'Operating Systems', 'React Native'],
-    icon: React.createElement(LuGraduationCap),
-    date: '2024',
   },
   {
     title: 'Software Developer',
